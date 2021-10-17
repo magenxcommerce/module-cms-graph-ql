@@ -1,0 +1,33 @@
+{
+    "name": "magenxcommerce/module-cms-graph-ql",
+    "description": "N/A",
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "version": "100.4.1",
+    "require": {
+        "php": "~7.3.0||~7.4.0",
+        "magenxcommerce/framework": "103.0.*",
+        "magenxcommerce/module-cms": "104.0.*",
+        "magenxcommerce/module-widget": "101.2.*",
+        "magenxcommerce/module-store": "101.1.*"
+    },
+    "suggest": {
+        "magento/module-graph-ql": "100.4.*",
+        "magento/module-graph-ql-cache": "100.4.*",
+        "magento/module-store-graph-ql": "100.4.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Magento\\CmsGraphQl\\": ""
+        }
+    },
+    "replace": {
+        "magento/module-cms-graph-ql": "*"
+    }
+}
